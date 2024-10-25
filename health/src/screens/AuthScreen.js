@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { View, TextInput, Text, StyleSheet } from 'react-native';
 import Button from '../components/Button';
 import Header from '../components/Header';
+// import { requestPermissions } from '../utils/permissions';
 
 const AuthScreen = () => {
   const [email, setEmail] = useState('');
@@ -23,6 +24,9 @@ const AuthScreen = () => {
     //     .catch(error => console.error('Register error:', error));
     // }
   };
+  // useEffect(() => {
+  //   requestPermissions();
+  // }, []);
 
   return (
     <View style={styles.container}>
